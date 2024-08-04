@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form id="loginForm" onsubmit="login(event)">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+            <a href="/register">Create an account</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="logo">
+            <h1>Campus Market</h1>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/40" alt="Profile Photo">
+            <span>Vishal</span>
+            <div class="options">
+                <a href="/sell">Sell</a>
+                <a href="/buy">Buy</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to Campus Market!</h2>
+        <p>Here you can buy and sell items within your college campus.</p>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            // Hide login form
+            document.querySelector('.login-container').style.display = 'none';
+            // Show navbar and content
+            document.querySelector('.navbar').style.display = 'flex';
+            document.querySelector('.content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
