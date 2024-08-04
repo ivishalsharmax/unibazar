@@ -36,7 +36,7 @@ Campus Market is a web-based platform designed to facilitate the buying and sell
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/campus-market.git
+   git clone https://github.com/ivishalsharmax/campus-market.git
    ```
 
 2. Navigate to the project directory:
